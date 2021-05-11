@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    padding-top: 200px;
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+img{
+    width: 100px;
+    height: 100px;
+    transition: 3s;
+}
+img:hover{
+    transform: rotate(360deg);
+}
+
+a.b{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+
+    font-family: serif;
+
+}
+a.b:hover{
+    text-decoration: underline;
+    color:coral;
+
+}
+
+#pacman {
+  position: absolute;
+  top:30px;
+  left:30px;
+  width: 0px;
+  height: 0px;
+  border-right: 70px solid transparent;
+  border-top: 70px solid yellow;
+  border-left: 70px solid yellow;
+  border-bottom: 70px solid yellow;
+  border-radius: 50%;
+}

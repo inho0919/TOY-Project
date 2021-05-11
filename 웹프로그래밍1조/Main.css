@@ -1,0 +1,182 @@
+body{
+      background-color: #EEEEEE;
+
+}
+table.a{
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    margin-top : 30px;
+    background-color: #33CCFF;
+}
+h1.title{
+  text-align: left;
+}
+div.upper {
+      position : static;
+      background-color: black;
+      top : 0px;
+      left : 0px;
+      height: 130px;
+}
+div.upper2{
+  text-align: center;
+    position : static;
+    background-color: #EEEEEE;
+    top : 0px;
+    left : 0px;
+    height: 90px;
+}
+p.main{
+  font-weight: bold;
+    font-family: '굴림체';
+}
+pre.main{
+  color : black;
+  text-align: left;
+  font-size: 18px;
+  font-family: '궁서체';
+
+}
+
+img.a{
+  margin-top : 10px;
+  margin-left :20px;
+
+}
+img.b{
+  margin-top: 0px;
+  margin-left: 0px;
+}
+p.eins{
+  text-decoration: none;
+  margin-left :20px;
+  color: white;
+  margin-top : 0px;
+  font-size: 15px;
+}
+a.logo{
+  text-decoration: none;
+  color: white;
+  margin-top : 0px;
+  font-size: 15px;
+}
+
+a.eins{
+  text-decoration: none;
+  color : black;
+  font-weight: bold;
+}
+
+div.gukhyum{
+  border : 1px solid gray; border-top:5px solid blue;
+  padding : 12px;
+  margin-bottom: 0px;
+  background-color: white;
+}
+table.b{
+  border-collapse: collapse;
+}
+td.web{
+    padding: 10px; font-size:95%;
+}
+td.web1{
+  margin-top : 0px;
+  text-align: left;
+}
+h2.web{
+  margin-top : 0px;
+  text-align: left;
+}
+div.gukhyum2{
+  border : 1px solid gray; border-top:5px solid green;
+  padding : 12px;
+  margin-bottom: 0px;
+  background-color: white;
+}
+
+div.gukhyum3{
+  border : 1px solid gray; border-top:5px solid pink;
+  padding : 12px;
+  margin-bottom: 0px;
+  background-color: white;
+}
+
+div.gukhyum4{
+  border : 1px solid gray; border-top:5px solid black;
+  padding : 12px;
+  margin-bottom: 0px;
+  background-color: white;
+}
+
+div.gukhyum5{
+  border : 1px solid gray; border-top:5px solid red;
+  padding : 12px;
+  margin-bottom: 0px;
+  background-color: white;
+}
+
+div.title{
+  border : 1px solid gray;
+  padding : 12px;
+  margin-bottom: 0px;
+  width : 200px;
+  text-align: left;
+}
+span{
+  padding : 20px;
+}
+
+div.pro1{
+
+}
+div.gukhyum4{
+  border : 1px solid gray; border-top:5px solid blue;
+  padding : 12px;
+  margin-bottom: 0px;
+}
+
+td.inho{
+  background-color: black;
+}
+
+table.inho{
+  background-color: black;
+  border: 2px solid #BBBBBB;
+  color:white;
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+  margin-top : 30px;
+}
+
+td.in{
+  background-color: black;
+  font-weight: bold;
+  color: white;
+}
+td.ho{
+  background-color: #CCCCCC;
+  color: black;
+}
+
+div.pico{
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+}
+td.color{
+  background-color: #CCFFFF;
+}
+
+h3.1{
+  color:white;
+}
+
+h2.contents{
+  text-align: left;
+}
+
+div.contents{
+  text-align: left;
+}

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>::1조의 Web WIKIPEDIA::</title>
+        <link type="text/css" rel="stylesheet" href="시작페이지.css">
+    </head>
+
+    <script type="text/javascript">
+      var nowLeft;
+      var nowTop;
+
+      function changeOpenMouth() {
+        document.getElementById("pacman").style.borderRight = "70px solid transparent";
+        setTimeout(changeCloseMouth,200);
+      }
+
+      function changeCloseMouth() {
+        document.getElementById("pacman").style.borderRight = "70px solid yellow";
+        setTimeout(changeOpenMouth,200);
+      }
+
+      function moveRight() {
+        var pacman = document.getElementById("pacman");
+        var pos = 30;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (pos >= window.innerWidth-180) {
+              nowLeft = pos;
+              pacman.style.transform = "rotate(90deg)";
+              moveDown();
+              clearInterval(id);
+          } else {
+              pos = pos + 5;
+              pacman.style.left = pos + 'px';
+            }
+          }
+        }
+
+      function moveDown() {
+        var pacman = document.getElementById("pacman");
+        var pos = 30;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (pos >= window.innerHeight-180) {
+              nowTop = pos;
+              pacman.style.transform = "rotate(180deg)";
+              moveLeft();
+              clearInterval(id);
+          } else {
+              pos = pos + 5;
+              pacman.style.top = pos + 'px';
+            }
+          }
+        }
+
+      function moveLeft() {
+        var pacman = document.getElementById("pacman");
+        var pos = nowLeft;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (pos <= 30) {
+              pacman.style.transform = "rotate(270deg)";
+              moveUp();
+              clearInterval(id);
+          } else {
+              pos = pos - 5;
+              pacman.style.left = pos + 'px';
+            }
+          }
+        }
+
+      function moveUp() {
+        var pacman = document.getElementById("pacman");
+        var pos = nowTop;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (pos <= 30) {
+              pacman.style.transform = "rotate(0deg)";
+              moveRight();
+              clearInterval(id);
+          } else {
+              pos = pos - 5;
+              pacman.style.top = pos + 'px';
+            }
+          }
+        }
+
+    </script>
+
+    <body onload="changeCloseMouth();">
+        <a class="a" href="Main.html">
+            <img src="wiki1.png" alt="leaf">
+        </a>
+        <p>
+            <a class="b" href="Main.html" alt="leaf">1조의 Web WIKIPEDIA</a>
+        </p>
+        <div id="pacman" onclick="moveRight();"></div>
+    </body>
+</html>

@@ -38,7 +38,7 @@ def update(num, ids, title, texts):
     try:
         conn = psycopg2.connect("host='"+hostname+"' user='"+username+"' password='"+password+"' port='"+port+"' dbname='"+db_name+"'")
         cur = conn.cursor()
-        sql = "UPDATE board SET id='"+ids+"', title='"+title+"', content='"+content+"' WHERE no='"+num+"';"
+        sql = "UPDATE board SET no='"+num+"', id='"+ids+"', title='"+title+"', content='"+texts+"' WHERE no='"+num+"';"
         cur.execute(sql)
         conn.commit()
         conn.close()

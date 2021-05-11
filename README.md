@@ -1,4 +1,4 @@
-# Project-B
+# TOY Projekt
 
 Mini Project / Test Project
 
